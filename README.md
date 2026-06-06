@@ -78,8 +78,9 @@ static-site-generator-python/
 #### запуск для локальной отладки
 
 ``` 
-python src/main.py ./
+python src/main.py / &&  python -m http.server 8888 --directory docs
 ```
+смотреть через http://localhost:8888/ 
 
 1. **Build the site**
 
