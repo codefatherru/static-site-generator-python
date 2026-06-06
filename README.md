@@ -110,8 +110,17 @@ python src/main.py / &&  python -m http.server 8888 --directory docs
 - No external libraries beyond standard library (os, shutil, re, etc.)
 - Guided by Boot.dev - Build a Static Site Generator in Python
 
-### License
+### ToDo
 
-MIT License — feel free to use, modify, or learn from this project.
+обработка изображений 
+- проверка путей и перекладывание
+- обработка data:image/png;base64
 
-Made with ❤️ and a lot of debugging by Brandon (AggroSec)
+#### errors
+
+> UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+
+при попытке Generating page from content\blog\plebuch\img.png to docs\blog\plebuch\img.png using template.html
+надо обработать только текстовые md файлы
+
+
