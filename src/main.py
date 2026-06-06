@@ -45,8 +45,8 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, bas
             generate_page(src_path, template_path, dst_path.replace(".md", ".html"), basepath)
 
 def main():
-    if sys.argv[1]:
-        basepath = sys.argv[1]
+    if len(sys.argv) > 1 and sys.argv[1]:
+        basepath = sys.argv[1] #значение префикса для ссылок в генерируемом HTML
     else:
         basepath = "/"
     copier("static", "docs")

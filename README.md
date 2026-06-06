@@ -75,6 +75,12 @@ static-site-generator-python/
 
 ### How to Run Locally
 
+#### запуск для локальной отладки
+
+``` 
+python src/main.py ./
+```
+
 1. **Build the site**
 
    ```bash
