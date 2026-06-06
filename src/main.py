@@ -17,10 +17,10 @@ def extract_title(markdown):
 
 def generate_page(from_path, template_path, dest_path, basepath):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
-    file = open(from_path, "r")
+    file = open(from_path, "r", encoding="utf-8")
     content = file.read()
     file.close()
-    temp = open(template_path, "r")
+    temp = open(template_path, "r", encoding="utf-8")
     template = temp.read()
     temp.close()
     html_node = markdown_to_html_node(content)
@@ -31,7 +31,7 @@ def generate_page(from_path, template_path, dest_path, basepath):
     template = template.replace('href="/', f'href="{basepath}')
     template = template.replace('src="/', f'src="{basepath}')
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-    new_file = open(dest_path, "w")
+    new_file = open(dest_path, "w", encoding="utf-8")
     new_file.write(template)
     new_file.close()
 
