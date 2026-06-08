@@ -116,6 +116,13 @@ python src/main.py / &&  python -m http.server 8888 --directory docs
 - проверка путей и перекладывание
 - обработка data:image/png;base64
 
+тесты
+что с test.sh ?
+похоже на https://github.com/LuaanNguyen/static-site-generator
+
+докер
+https://habr.com/ru/companies/rostelecom/articles/570098/
+
 #### errors
 
 > UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
